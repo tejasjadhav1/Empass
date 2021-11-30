@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="des.css">
+    <link rel="icon" href="/images/favicon.jpg">
+    <title>AMAZE MINDS</title>
+</head>
+
+<body>
+    <nav class=" navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <h1 class="hero-name">AMAZE MINDS</h1>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+
+        </ul>
+        <div class="rightnav v-class-resp">
+            <p class="reg" onClick="toggleRegisterModal()">Register/Login</p>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstsection" id="about">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Who is it for</p>
+                <p class="text-small"> <strong>Banner Area </strong> Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Rerum, quae temporibus. Porro obcaecati repellendus dignissimos rem, ipsum nihil officia
+                    aspernatur rerum vero reiciendis. Ipsa voluptatibus corporis est laborum alias velit debitis sunt
+                    quod vero omnis, ad esse error aliquid maxime quisquam soluta id eveniet ea in quia dolores,
+                    nesciunt eaque.</p>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="services">
+        <h1 style="text-align:center;font-size: 42px;">Services</h1>
+    <div class="service-card" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">Service Provided</p>
+            <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Neque architecto omnis animi rerum id dolorum fugiat, sed accusantium harum
+                voluptatibus, mollitia quasi repudiandae repellat. Esse, facilis. Provident nostrum in quas natus aut
+                cumque repellat non ad, sed at, vero itaque dicta laboriosam maiores sapiente consequuntur. Quod
+                delectus omnis temporibus molestiae!</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/150x150" alt="Random img" class="fluid">
+        </div>
+    </div>
+    <div class="service-card">
+        <div class="paras">
+            <p class="sectionTag text-big">Service Provided</p>
+            <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Quibusdam repellat facilis, at nulla quidem, sunt iusto totam delectus consectetur
+                velit vitae illo assumenda impedit rem corrupti est nisi deleniti obcaecati quia sapiente fuga
+                provident, ullam animi. Sunt, impedit voluptates sit inventore, dolores excepturi vero, rerum aut enim
+                dolor ut maiores.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/150x150/?programming" alt="Random img" class="fluid">
+        </div>
+    </div>
+    <div class="service-card">
+        <div class="paras">
+            <p class="sectionTag text-big">Service Provided</p>
+            <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corrupti sequi magnam temporibus animi, minima ullam incidunt ducimus! Voluptatibus
+                odio consequuntur pariatur, quae ut beatae molestiae est nostrum, quibusdam commodi asperiores corporis,
+                placeat delectus mollitia quidem voluptas ea reprehenderit unde iure? Quaerat cumque veniam dicta odio
+                ipsa error qui accusamus autem.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/150x150/?coding" alt="Random img" class="fluid">
+        </div>
+    </div>
+</section>
+<div class="counter-main-container">
+    <h1>Counter</h1>
+    <div class="counter-container">
+        
+            <div class="counter-box">
+                <i class="fa fa-plane"></i>
+                <h2>Days</h2>
+                <h1 class="counter-number">4</h1>
+            </div>
+
+        
+            <div class="counter-box">
+                <i class="fa fa-plane"></i>
+                <h2>Hours</h2>
+                <h1 class="counter-number">9</h1>
+            </div>
+
+        
+            <div class="counter-box">
+                <i class="fa fa-plane"></i>
+                <h2>Minutes</h2>
+                <h1 class="counter-number">5</h1>
+            </div>
+
+        
+            <div class="counter-box">
+                <i class="fa fa-plane"></i>
+                <h2>Seconds</h2>
+                <h1 class="counter-number">32</h1>
+            </div>
+
+    </div>
+</div>
+
+<div class="register-modal-main-container">
+    <div class="register-modal-container">
+        <img src="./images/cross.png" class="cross-icon" alt="Cross" onClick="toggleRegisterModal()"/>
+        <h1 class="text-center">Register/Login</h1>
+        <div class="form-container">
+            <input class="custom-text-field" type="text" name="Name" id="Name" placeholder="Enter your name">
+            <input class="custom-text-field" type="text" name="Phone" id="Phone" placeholder="Enter your email">
+            <input class="custom-text-field" type="text" name="Email" id="Email" placeholder="Enter your phone">
+            <div class="button-container">
+                <button class="form-button">Continue</button>
+                <p class="forget-link">forget password?</p>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+    <footer class="background">
+        <p class="text-footer">
+            &copy;Empass
+        </p>
+    </footer>
+    <script src="resp.js"></script>
+
+</body>
+<script>
+    var customViewportCorrectionVariable = 'vh';
+
+    function setViewportProperty(doc) {
+      var prevClientHeight;
+      var customVar = '--' + (customViewportCorrectionVariable || 'vh');
+      function handleResize() {
+        var clientHeight = doc.clientHeight;
+        if (clientHeight === prevClientHeight) return;
+        requestAnimationFrame(function updateViewportHeight() {
+          doc.style.setProperty(customVar, clientHeight * 0.01 + 'px');
+          prevClientHeight = clientHeight;
+        });
+      }
+      handleResize();
+      return handleResize;
+    }
+    window.addEventListener(
+      'resize',
+      setViewportProperty(document.documentElement)
+    );
+  </script>
+
+
+</html>
