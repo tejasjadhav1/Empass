@@ -363,6 +363,9 @@
     margin-top: 6px;
   }
 
+  .form-button{
+    cursor: pointer;
+  }
   .forget-link{
     cursor: pointer;
   }
