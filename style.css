@@ -362,6 +362,10 @@
     text-decoration: underline;
     margin-top: 6px;
   }
+
+  .forget-link{
+    cursor: pointer;
+  }
   
   @media screen and (max-width: 600px) {
     .services .service-card,
